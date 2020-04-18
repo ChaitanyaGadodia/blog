@@ -3,8 +3,8 @@
 ## Setup
 
 ```
-git clone https://github.com/anarock/anarock.eng.git
-cd anarock.eng
+git clone https://github.com/ChaitanyaGadodia/chaitanyagadodia.github.io.git
+cd chaitanyagadodia.github.io
 yarn
 yarn build; yarn start
 
