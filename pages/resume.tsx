@@ -1,6 +1,6 @@
 import * as React from "react";
 import Head from "next/Head";
-import { css } from "emotion";
+import { css, cx } from "emotion";
 import Header from "../components/Header";
 import { pageWrap, pageHeading } from "../styles/global";
 
@@ -57,6 +57,14 @@ const contentStyle = css({
   fontWeight: 200,
 });
 
+const labelStyle = css({
+  textAlign: "end",
+});
+
+const nameText = css({
+  paddingLeft: "20px",
+});
+
 export default class Resume extends React.PureComponent {
   render() {
     return (
@@ -72,18 +80,14 @@ export default class Resume extends React.PureComponent {
             <table>
               <tbody>
                 <tr>
-                  <td className={headStyle} style={{ textAlign: "end" }}>
-                    Name
-                  </td>
-                  <td className={contentStyle} style={{ paddingLeft: "20px" }}>
+                  <td className={cx(headStyle, labelStyle)}>Name</td>
+                  <td className={cx(contentStyle, nameText)}>
                     Chaitanya Gadodia
                   </td>
                 </tr>
                 <tr>
-                  <td className={headStyle} style={{ textAlign: "end" }}>
-                    Contact
-                  </td>
-                  <td className={contentStyle} style={{ paddingLeft: "20px" }}>
+                  <td className={cx(headStyle, labelStyle)}>Contact</td>
+                  <td className={cx(contentStyle, nameText)}>
                     chaitanya [dot] gadodia01 [at] gmail [dot] com
                   </td>
                 </tr>
@@ -98,7 +102,7 @@ export default class Resume extends React.PureComponent {
                   <td>
                     <div className={badge}>2014 - 2018</div>
                   </td>
-                  <td className={headStyle} style={{ paddingLeft: "20px" }}>
+                  <td className={cx(headStyle, nameText)}>
                     Birla Institute of Technology and Science, Pilani – Bachelor
                     of Engg. (Hons.) in Electrical and Electronics
                   </td>

@@ -2,16 +2,26 @@ import * as React from "react";
 import Head from "next/Head";
 import Header from "../components/Header";
 import { pageWrap, pageHeading } from "../styles/global";
-import { css } from "emotion";
+import { css, cx } from "emotion";
 
 const statement = css({
   margin: "0px 40px 15px 0px",
   textAlign: "justify",
 });
 
-const contentWrap = css({ display: "flex", alignItems: "center" });
+const contentWrap = css({
+  display: "flex",
+  alignItems: "center",
+});
 
-const profileStyle = css({ borderRadius: "4px", width: "270px" });
+const profileStyle = css({
+  borderRadius: "4px",
+  width: "270px",
+});
+
+const subHeading = css({
+  margin: "10px 0px 40px",
+});
 
 export default class Index extends React.PureComponent {
   render() {
@@ -23,7 +33,7 @@ export default class Index extends React.PureComponent {
         <Header page="Home" />
         <div className={pageWrap}>
           <div className={pageHeading}>Chaitanya Gadodia</div>
-          <div className={statement} style={{ margin: "10px 0px 40px" }}>
+          <div className={cx(statement, subHeading)}>
             engineer. hacker. optimist
           </div>
           <div className={contentWrap}>
