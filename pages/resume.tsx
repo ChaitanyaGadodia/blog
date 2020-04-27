@@ -20,6 +20,43 @@ const card = css`
   border-radius: 0.25rem;
 `;
 
+const cardHeading = css({
+  fontSize: "1.75rem",
+  fontWeight: 300,
+  marginBottom: "0.75rem",
+});
+
+const badge = css`
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0.125rem;
+  color: #ffffff;
+  width: 110px;
+  background-color: #cc0000;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+`;
+
+const headStyle = css({
+  fontSize: 16,
+  fontWeight: 500,
+});
+
+const contentStyle = css({
+  fontWeight: 200,
+});
+
 export default class Resume extends React.PureComponent {
   render() {
     return (
@@ -31,73 +68,184 @@ export default class Resume extends React.PureComponent {
         <div className={pageWrap}>
           <div className={pageHeading}>Resume</div>
           <div className={card}>
-            <div>General Information</div>
-            <div>Full Name Chaitanya Gadodia </div>
-            <div>Contact chaitanya.gadodia01 [at] gmail [dot] com</div>
+            <div className={cardHeading}>General Information</div>
+            <table>
+              <tbody>
+                <tr>
+                  <td className={headStyle} style={{ textAlign: "end" }}>
+                    Name
+                  </td>
+                  <td className={contentStyle} style={{ paddingLeft: "20px" }}>
+                    Chaitanya Gadodia
+                  </td>
+                </tr>
+                <tr>
+                  <td className={headStyle} style={{ textAlign: "end" }}>
+                    Contact
+                  </td>
+                  <td className={contentStyle} style={{ paddingLeft: "20px" }}>
+                    chaitanya [dot] gadodia01 [at] gmail [dot] com
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div className={card}>
-            <div>Education</div>
-            <div>
-              2014 - 2018 Birla Institute of Technology and Science, Pilani –
-              Bachelor of Engg. (Hons.) in Electrical and Electronics
-            </div>
+            <div className={cardHeading}>Education</div>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <div className={badge}>2014 - 2018</div>
+                  </td>
+                  <td className={headStyle} style={{ paddingLeft: "20px" }}>
+                    Birla Institute of Technology and Science, Pilani – Bachelor
+                    of Engg. (Hons.) in Electrical and Electronics
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div className={card}>
-            <div>Work Experience</div>
-            <div>
-              Data Science Intern, HERE Maps Jul 2017 - Dec 2017 • Developed a
-              Machine Learning and Data Mining solution to Automate the manual
-              process of Image Review for Map Creation and Places Teams. Scaled
-              the solution using Pyspark and deployed it on a large graph
-              dataset (Neo4j) and AWS. • Analyzed the Validation-Exception
-              framework deltas to generate a summary of the response data .
-            </div>
-            <div>
-              Summer Research Intern, Center for Development of Imaging
-              Technology Jun 2016 - Jul 2016 • Worked with the Optical Image
-              Processing and Security Products Team. • Designed and implemented
-              a model for Vehicle Detection during night time from CCTV footage
-              for Forensic Analysis, using various image processing techniques.
-            </div>
+            <div className={cardHeading}>Experience</div>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <div className={badge}>Jun 2018-curr.</div>
+                  </td>
+                  <td>
+                    <div className={headStyle}>Software Engineer, Anarock</div>
+                    <ul className={contentStyle}>
+                      <li>
+                        Building the next gen high throughput and intelligent
+                        Saas products for real estate.
+                      </li>
+                      <li>
+                        Tech: Javascript, Typescript, Reactjs, Next.js, Svelte
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div className={badge}>Jul-Dec 2017</div>
+                  </td>
+                  <td>
+                    <div className={headStyle}>
+                      Data Science Intern, HERE Maps
+                    </div>
+                    <ul className={contentStyle}>
+                      <li>
+                        Developed a Machine Learning and Data Mining solution to
+                        Automate the manual process of Image Review for Map
+                        Creation and Places Teams. Scaled the solution using
+                        Pyspark and deployed it on a large graph dataset (Neo4j)
+                        and AWS.
+                      </li>
+                      <li>
+                        Analyzed the Validation-Exception framework deltas to
+                        generate a summary of the response data .
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div className={badge}>Summer 2016</div>
+                  </td>
+                  <td>
+                    <div className={headStyle}>
+                      Summer Research Intern, Center for Development of Imaging
+                      Technology
+                    </div>
+                    <ul className={contentStyle}>
+                      <li>
+                        Worked with the Optical Image Processing and Security
+                        Products Team.
+                      </li>
+                      <li>
+                        Designed and implemented a model for Vehicle Detection
+                        during night time from CCTV footage for Forensic
+                        Analysis, using various image processing techniques.
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div className={card}>
-            <div>Projects</div>
-            <div>
-              Image Classification Aug 2016 - Apr 2017 • Implemented a CNN
-              classifier for CIFAR and MNIST image datasets using Tensorflow and
-              Tensorboard as a project for machine learning course.
-            </div>
-            <div>
-              ANC-Bill Predictor Aug 2016 - Apr 2017 • Implemented machine
-              learning models for predicting the monthly All NIght Canteen Bill
-              based on various parameters related to a student&apos;s lifestyle
-              in BITS.
-            </div>
+            <div className={cardHeading}>Projects</div>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <div className={badge}>Sep 2017</div>
+                  </td>
+                  <td>
+                    <div className={headStyle}>Image Classification</div>
+                    <ul className={contentStyle}>
+                      <li>
+                        Implemented a CNN classifier for CIFAR and MNIST image
+                        datasets using Tensorflow and Tensorboard as a project
+                        for machine learning course.
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div className={badge}>Nov 2017</div>
+                  </td>
+                  <td>
+                    <div className={headStyle}>ANC-Bill Predictor</div>
+                    <ul className={contentStyle}>
+                      <li>
+                        Implemented machine learning models for predicting the
+                        monthly All NIght Canteen Bill based on various
+                        parameters related to a student&apos;s lifestyle in
+                        BITS.
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div className={card}>
-            <div>Skills</div>
-            <div>
-              Courses: Object Oriented Programming, Operating Systems, Machine
-              Learning, Pattern Recognition.
-            </div>
-            <div>Programming Languages : C, C++, Python, R, Javascript</div>
-            <div>Tools : Amazon Web Services, Github, Jupyter, VSCode. </div>
+            <div className={cardHeading}>Skills</div>
+            <ul className={contentStyle}>
+              <li>
+                Courses: Object Oriented Programming, Operating Systems, Machine
+                Learning, Pattern Recognition
+              </li>
+              <li>
+                Programming Languages: C, C++, Python, R, Javascript, Ruby
+              </li>
+              <li>Tools: Amazon Web Services, Github, Jupyter, VSCode</li>
+            </ul>
           </div>
           <div className={card}>
-            <div>Awards and Recognitions</div>
-            <div>
-              • Ranked 1st out of 11 teams in the AI based - virtual bot coding
-              competition at the even plAI, APOGEE&apos;16. 2016
-            </div>
-            <div>
-              • Awarded Gold medal at APOGEE&apos;15 for the project Temporal
-              Clustering of Human Actions for Complex activity analysis. 2015
-            </div>
+            <div className={cardHeading}>Awards and Recognitions</div>
+            <ul className={contentStyle}>
+              <li>
+                Ranked 1st out of 11 teams in the AI based - virtual bot coding
+                competition at the even plAI, APOGEE&apos;16. 2016
+              </li>
+              <li>
+                Awarded Gold medal at APOGEE&apos;15 for the project Temporal
+                Clustering of Human Actions for Complex activity analysis. 2015
+              </li>
+            </ul>
           </div>
           <div className={card}>
-            <div>Hobbies</div>
-            <div>Full Name Chaitanya Gadodia </div>
-            <div>Contact chaitanya.gadodia01 [at] gmail [dot] com</div>
+            <div className={cardHeading}>Other Interests</div>
+            <ul className={contentStyle}>
+              <li>reading, music</li>
+              <li>meditation, yoga, cycling</li>
+              <li>fundamental & technical stocks analysis</li>
+            </ul>
           </div>
         </div>
       </>

@@ -17,9 +17,6 @@ injectGlobal`
   }
   a {
     text-decoration: none;
-    color: #5f6c80;
-    margin-right: 20px;
-    font-size: 18px;
   }
 `;
 

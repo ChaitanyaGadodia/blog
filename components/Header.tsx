@@ -1,18 +1,30 @@
 import * as React from "react";
-import { css } from "emotion";
+import { css, cx } from "emotion";
 import Link from "next/link";
 
 interface Props {
   page: string;
 }
 
-const selectedPage = css({});
+const tabStyle = css({
+  textDecoration: "none",
+  color: "#5f6c80",
+  marginRight: "20px",
+  fontSize: "18px",
+});
+
+const selectedPage = css({
+  fontWeight: 700,
+});
 
 const Tab = (props: { href: string; title: string; page: string }) => {
   const { href, page, title } = props;
   return (
     <Link href={href}>
-      <a title={title} className={page === title ? selectedPage : undefined}>
+      <a
+        title={title}
+        className={page === title ? cx(selectedPage, tabStyle) : tabStyle}
+      >
         {title}
       </a>
     </Link>
@@ -59,6 +71,7 @@ export default class Header extends React.PureComponent<Props> {
           </div>
           <div>
             <a
+              className={tabStyle}
               title="Github"
               rel="noopener noreferrer"
               target="_blank"
@@ -67,6 +80,7 @@ export default class Header extends React.PureComponent<Props> {
               Github
             </a>
             <a
+              className={tabStyle}
               title="LinkedIn"
               rel="noopener noreferrer"
               target="_blank"
@@ -74,7 +88,11 @@ export default class Header extends React.PureComponent<Props> {
             >
               LinkedIn
             </a>
-            <a title="Email" href="mailto:f2014177p@alumni.bits-pilani.ac.in">
+            <a
+              className={tabStyle}
+              title="Email"
+              href="mailto:f2014177p@alumni.bits-pilani.ac.in"
+            >
               Email
             </a>
           </div>
