@@ -10,10 +10,10 @@ module.exports = {
       "/": { page: "/" },
       "/resume": { page: "/resume" },
       "/projects": { page: "/projects" },
-      "/notes": { page: "/notes" }
+      "/notes": { page: "/notes" },
     };
   },
-  assetPrefix: !debug ? "https://chaitanyagadodia.github.io/" : ""
+  assetPrefix: !debug ? "https://chaitanyagadodia.github.io/" : "",
   /* webpack: (config, { dev }) => {
     // Perform customizations to webpack config
     // console.log('webpack');

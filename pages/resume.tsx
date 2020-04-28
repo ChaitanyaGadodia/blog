@@ -1,6 +1,6 @@
 import * as React from "react";
 import Head from "next/Head";
-import { css, cx } from "emotion";
+import { css } from "@emotion/core";
 import Header from "../components/Header";
 import { pageWrap, pageHeading } from "../styles/global";
 
@@ -73,54 +73,52 @@ export default class Resume extends React.PureComponent {
           <title>Chaitanya Gadodia | Resume</title>
         </Head>
         <Header page="Resume" />
-        <div className={pageWrap}>
-          <div className={pageHeading}>Resume</div>
-          <div className={card}>
-            <div className={cardHeading}>General Information</div>
+        <div css={pageWrap}>
+          <div css={pageHeading}>Resume</div>
+          <div css={card}>
+            <div css={cardHeading}>General Information</div>
             <table>
               <tbody>
                 <tr>
-                  <td className={cx(headStyle, labelStyle)}>Name</td>
-                  <td className={cx(contentStyle, nameText)}>
-                    Chaitanya Gadodia
-                  </td>
+                  <td css={[headStyle, labelStyle]}>Name</td>
+                  <td css={[contentStyle, nameText]}>Chaitanya Gadodia</td>
                 </tr>
                 <tr>
-                  <td className={cx(headStyle, labelStyle)}>Contact</td>
-                  <td className={cx(contentStyle, nameText)}>
+                  <td css={[headStyle, labelStyle]}>Contact</td>
+                  <td css={[contentStyle, nameText]}>
                     chaitanya [dot] gadodia01 [at] gmail [dot] com
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div className={card}>
-            <div className={cardHeading}>Education</div>
+          <div css={card}>
+            <div css={cardHeading}>Education</div>
             <table>
               <tbody>
                 <tr>
                   <td>
-                    <div className={badge}>2014 - 2018</div>
+                    <div css={badge}>2014 - 2018</div>
                   </td>
-                  <td className={cx(headStyle, nameText)}>
-                    Birla Institute of Technology and Science, Pilani – Bachelor
-                    of Engg. (Hons.) in Electrical and Electronics
+                  <td css={[headStyle, nameText]}>
+                    Birla Institute of Technology and Science, Pilani – B.E.
+                    (Hons.) in Electrical and Electronics
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div className={card}>
-            <div className={cardHeading}>Experience</div>
+          <div css={card}>
+            <div css={cardHeading}>Experience</div>
             <table>
               <tbody>
                 <tr>
                   <td>
-                    <div className={badge}>Jun 2018-curr.</div>
+                    <div css={badge}>Jun 2018-cur.</div>
                   </td>
                   <td>
-                    <div className={headStyle}>Software Engineer, Anarock</div>
-                    <ul className={contentStyle}>
+                    <div css={headStyle}>Software Engineer, Anarock</div>
+                    <ul css={contentStyle}>
                       <li>
                         Building the next gen high throughput and intelligent
                         Saas products for real estate.
@@ -133,13 +131,11 @@ export default class Resume extends React.PureComponent {
                 </tr>
                 <tr>
                   <td>
-                    <div className={badge}>Jul-Dec 2017</div>
+                    <div css={badge}>Jul-Dec 2017</div>
                   </td>
                   <td>
-                    <div className={headStyle}>
-                      Data Science Intern, HERE Maps
-                    </div>
-                    <ul className={contentStyle}>
+                    <div css={headStyle}>Data Science Intern, HERE Maps</div>
+                    <ul css={contentStyle}>
                       <li>
                         Developed a Machine Learning and Data Mining solution to
                         Automate the manual process of Image Review for Map
@@ -156,14 +152,14 @@ export default class Resume extends React.PureComponent {
                 </tr>
                 <tr>
                   <td>
-                    <div className={badge}>Summer 2016</div>
+                    <div css={badge}>Summer 2016</div>
                   </td>
                   <td>
-                    <div className={headStyle}>
+                    <div css={headStyle}>
                       Summer Research Intern, Center for Development of Imaging
                       Technology
                     </div>
-                    <ul className={contentStyle}>
+                    <ul css={contentStyle}>
                       <li>
                         Worked with the Optical Image Processing and Security
                         Products Team.
@@ -179,17 +175,17 @@ export default class Resume extends React.PureComponent {
               </tbody>
             </table>
           </div>
-          <div className={card}>
-            <div className={cardHeading}>Projects</div>
+          <div css={card}>
+            <div css={cardHeading}>Projects</div>
             <table>
               <tbody>
                 <tr>
                   <td>
-                    <div className={badge}>Sep 2017</div>
+                    <div css={badge}>Sep 2017</div>
                   </td>
                   <td>
-                    <div className={headStyle}>Image Classification</div>
-                    <ul className={contentStyle}>
+                    <div css={headStyle}>Image Classification</div>
+                    <ul css={contentStyle}>
                       <li>
                         Implemented a CNN classifier for CIFAR and MNIST image
                         datasets using Tensorflow and Tensorboard as a project
@@ -200,11 +196,11 @@ export default class Resume extends React.PureComponent {
                 </tr>
                 <tr>
                   <td>
-                    <div className={badge}>Nov 2017</div>
+                    <div css={badge}>Nov 2017</div>
                   </td>
                   <td>
-                    <div className={headStyle}>ANC-Bill Predictor</div>
-                    <ul className={contentStyle}>
+                    <div css={headStyle}>ANC-Bill Predictor</div>
+                    <ul css={contentStyle}>
                       <li>
                         Implemented machine learning models for predicting the
                         monthly All NIght Canteen Bill based on various
@@ -217,9 +213,9 @@ export default class Resume extends React.PureComponent {
               </tbody>
             </table>
           </div>
-          <div className={card}>
-            <div className={cardHeading}>Skills</div>
-            <ul className={contentStyle}>
+          <div css={card}>
+            <div css={cardHeading}>Skills</div>
+            <ul css={contentStyle}>
               <li>
                 Courses: Object Oriented Programming, Operating Systems, Machine
                 Learning, Pattern Recognition
@@ -230,9 +226,9 @@ export default class Resume extends React.PureComponent {
               <li>Tools: Amazon Web Services, Github, Jupyter, VSCode</li>
             </ul>
           </div>
-          <div className={card}>
-            <div className={cardHeading}>Awards and Recognitions</div>
-            <ul className={contentStyle}>
+          <div css={card}>
+            <div css={cardHeading}>Awards and Recognitions</div>
+            <ul css={contentStyle}>
               <li>
                 Ranked 1st out of 11 teams in the AI based - virtual bot coding
                 competition at the even plAI, APOGEE&apos;16. 2016
@@ -243,11 +239,11 @@ export default class Resume extends React.PureComponent {
               </li>
             </ul>
           </div>
-          <div className={card}>
-            <div className={cardHeading}>Other Interests</div>
-            <ul className={contentStyle}>
+          <div css={card}>
+            <div css={cardHeading}>Other Interests</div>
+            <ul css={contentStyle}>
               <li>reading, music</li>
-              <li>meditation, yoga, cycling</li>
+              <li>meditation, yoga, swimming, cycling</li>
               <li>fundamental & technical stocks analysis</li>
             </ul>
           </div>

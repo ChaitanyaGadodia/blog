@@ -2,21 +2,32 @@ import * as React from "react";
 import Head from "next/Head";
 import Header from "../components/Header";
 import { pageWrap, pageHeading } from "../styles/global";
-import { css, cx } from "emotion";
+import { css } from "@emotion/core";
 
-const statement = css({
-  margin: "0px 40px 15px 0px",
-  textAlign: "justify",
-});
+// const breakpoints = [576, 768, 992, 1200]
 
-const contentWrap = css({
-  display: "flex",
-  alignItems: "center",
+const statement = css`
+  margin: 0px 40px 15px 0px;
+  text-align: justify;
+  @media (max-width: 576px) {
+    margin-right: 0px;
+  }
+`;
+
+const contentWrap = css`
+  display: flex;
+  align-items: center;
+  @media (max-width: 576px) {
+    flex-direction: column-reverse;
+  }
+`;
+
+const textWrap = css({
+  marginTop: "5px",
 });
 
 const profileStyle = css({
   borderRadius: "4px",
-  width: "270px",
 });
 
 const subHeading = css({
@@ -31,21 +42,19 @@ export default class Index extends React.PureComponent {
           <title>Chaitanya Gadodia</title>
         </Head>
         <Header page="Home" />
-        <div className={pageWrap}>
-          <div className={pageHeading}>Chaitanya Gadodia</div>
-          <div className={cx(statement, subHeading)}>
-            engineer. hacker. optimist
-          </div>
-          <div className={contentWrap}>
-            <div>
-              <div className={statement}>
-                I love to code and am extremely passionate about building high
-                throughput, intelligent solutions to problems that can scale to
-                millions of users using products which are{" "}
-                <strong>data driven</strong> and have{" "}
+        <div css={pageWrap}>
+          <div css={pageHeading}>Chaitanya Gadodia</div>
+          <div css={[statement, subHeading]}>engineer. hacker. optimist</div>
+          <div css={contentWrap}>
+            <div css={textWrap}>
+              <div css={statement}>
+                I &#128150;to <strong>code</strong> and am extremely passionate
+                about <strong>building</strong> high throughput, intelligent
+                solutions to problems that can scale to millions of users using
+                products which are <strong>data driven</strong> and have{" "}
                 <strong>great design</strong>.
               </div>
-              <div className={statement}>
+              <div css={statement}>
                 Currently, I code for a bootstrapped startup{" "}
                 <a
                   href="https://tech.anarock.com/"
@@ -56,7 +65,7 @@ export default class Index extends React.PureComponent {
                 </a>
                 , based out of Mumbai, India.
               </div>
-              <div className={statement}>
+              <div css={statement}>
                 Prior to which I graduated with a B.E.(Hons.) in Electrical and
                 Electronics from{" "}
                 <a
@@ -84,12 +93,21 @@ export default class Index extends React.PureComponent {
                 </a>
                 .
               </div>
-              <div className={statement}>
+              <div css={statement}>
                 I idiolize Rahul Dravid and Steve Jobs for the intensity these
                 guys had, and I intent to bring the same intensity to the table.
               </div>
+              <div css={statement}>
+                I am always on the lookout for opportunities which will help me
+                learn new things, so lets collaborate!
+              </div>
             </div>
-            <img src="/profile.jpg" className={profileStyle} />
+            <img
+              alt="Profile Pic"
+              src="/profile.jpg"
+              css={profileStyle}
+              width={270}
+            />
           </div>
         </div>
       </>

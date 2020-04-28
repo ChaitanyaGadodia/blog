@@ -1,11 +1,11 @@
 import * as React from "react";
-import { css } from "emotion";
+import { css } from "@emotion/core";
 
 export default class Footer extends React.PureComponent {
   render() {
     return (
       <div
-        className={css`
+        css={css`
           color: #343a40;
           background-color: #fdfdfd;
           margin-right: auto;

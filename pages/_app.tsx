@@ -1,30 +1,37 @@
 import * as React from "react";
 import App from "next/app";
-import { injectGlobal } from "emotion";
+import { Global, css } from "@emotion/core";
 import Footer from "../components/Footer";
 
-injectGlobal`
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  body {
-    font-family: "Roboto", Helvetica, sans-serif;
-    letter-spacing: normal;
-    margin: 0;
-    font-size: 16px;
-    min-width: 320px;
-    box-sizing: border-box;
-  }
-  a {
-    text-decoration: none;
-  }
-`;
+const globalStyles = (
+  <Global
+    styles={css`
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", Helvetica, sans-serif;
+        letter-spacing: normal;
+        margin: 0;
+        font-size: 16px;
+        min-width: 320px;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+      }
+    `}
+  />
+);
 
 export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
       <>
+        {globalStyles}
         <Component {...pageProps} />
         <Footer />
       </>

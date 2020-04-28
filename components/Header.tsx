@@ -1,5 +1,5 @@
 import * as React from "react";
-import { css, cx } from "emotion";
+import { css } from "@emotion/core";
 import Link from "next/link";
 
 interface Props {
@@ -11,6 +11,7 @@ const tabStyle = css({
   color: "#5f6c80",
   marginRight: "20px",
   fontSize: "18px",
+  cursor: "pointer",
 });
 
 const selectedPage = css({
@@ -21,10 +22,7 @@ const Tab = (props: { href: string; title: string; page: string }) => {
   const { href, page, title } = props;
   return (
     <Link href={href}>
-      <a
-        title={title}
-        className={page === title ? cx(selectedPage, tabStyle) : tabStyle}
-      >
+      <a title={title} css={[tabStyle, page === title && selectedPage]}>
         {title}
       </a>
     </Link>
@@ -36,7 +34,7 @@ export default class Header extends React.PureComponent<Props> {
     const { page } = this.props;
     return (
       <div
-        className={css`
+        css={css`
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
             0 2px 10px 0 rgba(0, 0, 0, 0.12);
           font-weight: 300;
@@ -53,7 +51,7 @@ export default class Header extends React.PureComponent<Props> {
         `}
       >
         <div
-          className={css`
+          css={css`
             margin-right: auto;
             margin-left: auto;
             max-width: 800px;
@@ -71,7 +69,7 @@ export default class Header extends React.PureComponent<Props> {
           </div>
           <div>
             <a
-              className={tabStyle}
+              css={tabStyle}
               title="Github"
               rel="noopener noreferrer"
               target="_blank"
@@ -80,7 +78,7 @@ export default class Header extends React.PureComponent<Props> {
               Github
             </a>
             <a
-              className={tabStyle}
+              css={tabStyle}
               title="LinkedIn"
               rel="noopener noreferrer"
               target="_blank"
@@ -89,7 +87,7 @@ export default class Header extends React.PureComponent<Props> {
               LinkedIn
             </a>
             <a
-              className={tabStyle}
+              css={tabStyle}
               title="Email"
               href="mailto:f2014177p@alumni.bits-pilani.ac.in"
             >

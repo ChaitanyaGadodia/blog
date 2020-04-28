@@ -2,7 +2,7 @@ import * as React from "react";
 import Head from "next/Head";
 import Header from "../components/Header";
 import { pageWrap, pageHeading } from "../styles/global";
-import { css } from "emotion";
+import { css } from "@emotion/core";
 
 export default class Index extends React.PureComponent {
   render() {
@@ -12,10 +12,10 @@ export default class Index extends React.PureComponent {
           <title>Chaitanya Gadodia | Notes</title>
         </Head>
         <Header page="Notes" />
-        <div className={pageWrap}>
-          <div className={pageHeading}>Notes</div>
+        <div css={pageWrap}>
+          <div css={pageHeading}>Notes</div>
           <div
-            className={css({
+            css={css({
               display: "flex",
               alignItems: "center",
               justifyContent: "center",

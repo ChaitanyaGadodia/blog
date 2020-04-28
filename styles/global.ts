@@ -1,4 +1,4 @@
-import { css } from "emotion";
+import { css } from "@emotion/core";
 
 export const pageWrap = css({
   padding: "56px 15px 30px",
@@ -9,4 +9,7 @@ export const pageWrap = css({
   width: "100%",
 });
 
-export const pageHeading = css({ fontWeight: 300, fontSize: "2.5rem" });
+export const pageHeading = css({
+  fontWeight: 300,
+  fontSize: "2.5rem",
+});
