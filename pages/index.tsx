@@ -51,7 +51,7 @@ export default class Index extends React.PureComponent {
                 I &#128150;to <strong>code</strong> and am extremely passionate
                 about <strong>building</strong> high throughput, intelligent
                 solutions to problems that can scale to millions of users using
-                products which are <strong>data driven</strong> and have{" "}
+                products that are <strong>data-driven</strong> and have a{" "}
                 <strong>great design</strong>.
               </div>
               <div css={statement}>
@@ -95,11 +95,11 @@ export default class Index extends React.PureComponent {
               </div>
               <div css={statement}>
                 I idiolize Rahul Dravid and Steve Jobs for the intensity these
-                guys had, and I intent to bring the same intensity to the table.
+                guys had, and I intend to bring the same intensity to the table.
               </div>
               <div css={statement}>
-                I am always on the lookout for opportunities which will help me
-                learn new things, so lets collaborate!
+                I am always on the lookout for opportunities that will help me
+                learn new things, so let us collaborate!
               </div>
             </div>
             <img

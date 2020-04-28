@@ -120,7 +120,7 @@ export default class Resume extends React.PureComponent {
                     <div css={headStyle}>Software Engineer, Anarock</div>
                     <ul css={contentStyle}>
                       <li>
-                        Building the next gen high throughput and intelligent
+                        Building the next-gen high throughput and intelligent
                         Saas products for real estate.
                       </li>
                       <li>
@@ -145,7 +145,7 @@ export default class Resume extends React.PureComponent {
                       </li>
                       <li>
                         Analyzed the Validation-Exception framework deltas to
-                        generate a summary of the response data .
+                        generate a summary of the response data.
                       </li>
                     </ul>
                   </td>
@@ -230,12 +230,14 @@ export default class Resume extends React.PureComponent {
             <div css={cardHeading}>Awards and Recognitions</div>
             <ul css={contentStyle}>
               <li>
-                Ranked 1st out of 11 teams in the AI based - virtual bot coding
-                competition at the even plAI, APOGEE&apos;16. 2016
+                Ranked <strong>1st out of 11</strong> teams in the AI-based -
+                virtual bot coding competition at the even plAI,{" "}
+                <strong>APOGEE&apos;16</strong>.
               </li>
               <li>
-                Awarded Gold medal at APOGEE&apos;15 for the project Temporal
-                Clustering of Human Actions for Complex activity analysis. 2015
+                Awarded <strong>Gold medal</strong> at{" "}
+                <strong>APOGEE&apos;15</strong> for the project Temporal
+                Clustering of Human Actions for Complex activity analysis.
               </li>
             </ul>
           </div>
