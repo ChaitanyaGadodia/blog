@@ -14,7 +14,7 @@ module.exports = withPwa({
       "/notes": { page: "/notes" },
     };
   },
-  assetPrefix: !debug ? "https://chaitanyagadodia.github.io/" : "",
+  // assetPrefix: !debug ? "https://chaitanyagadodia.github.io/" : "",
   pwa: {
     dest: "public",
   },
