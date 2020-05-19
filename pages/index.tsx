@@ -81,7 +81,7 @@ export default class Index extends React.PureComponent {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Here
+                  Here Maps
                 </a>{" "}
                 and{" "}
                 <a
@@ -94,8 +94,9 @@ export default class Index extends React.PureComponent {
                 .
               </div>
               <div css={statement}>
-                I idiolize Rahul Dravid and Steve Jobs for the intensity these
-                guys had, and I intend to bring the same intensity to the table.
+                I have always found idiols in people like Rahul Dravid and Steve
+                Jobs, who are know for the intensity these guys had, and I
+                intend to bring the same intensity to the table.
               </div>
               <div css={statement}>
                 I am always on the lookout for opportunities that will help me

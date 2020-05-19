@@ -124,7 +124,19 @@ export default class Resume extends React.PureComponent {
                         Saas products for real estate.
                       </li>
                       <li>
-                        Tech: Javascript, Typescript, Reactjs, Next.js, Svelte
+                        Contributed to our Open Source UI Component Library:{" "}
+                        <a
+                          href="https://pebble-web.netlify.com/"
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          Pebble
+                        </a>
+                        .
+                      </li>
+                      <li>
+                        Tech: Javascript, Typescript, Reactjs, Next.js, Svelte,
+                        GraphQL
                       </li>
                     </ul>
                   </td>
