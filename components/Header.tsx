@@ -64,8 +64,8 @@ export default class Header extends React.PureComponent<Props> {
           <div>
             <Tab href="/" title="Home" page={page} />
             <Tab href="/resume" title="Resume" page={page} />
-            <Tab href="/projects" title="Projects" page={page} />
-            <Tab href="/notes" title="Notes" page={page} />
+            {/* <Tab href="/projects" title="Projects" page={page} /> */}
+            {/* <Tab href="/notes" title="Notes" page={page} /> */}
           </div>
           <div>
             <a

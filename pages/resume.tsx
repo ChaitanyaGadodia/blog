@@ -124,6 +124,10 @@ export default class Resume extends React.PureComponent {
                         Saas products for real estate.
                       </li>
                       <li>
+                        Have built multiple SPA web apps, Static websites,
+                        Responsive PWAs.
+                      </li>
+                      <li>
                         Contributed to our Open Source UI Component Library:{" "}
                         <a
                           href="https://pebble-web.netlify.com/"
