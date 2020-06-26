@@ -139,8 +139,8 @@ export default class Resume extends React.PureComponent {
                         .
                       </li>
                       <li>
-                        Tech: Javascript, Typescript, Reactjs, Next.js, Svelte,
-                        GraphQL
+                        Tech: Javascript, Typescript, Reactjs, Redux, Next.js,
+                        GraphQL, Svelte
                       </li>
                     </ul>
                   </td>
@@ -237,9 +237,9 @@ export default class Resume extends React.PureComponent {
                 Learning, Pattern Recognition
               </li>
               <li>
-                Programming Languages: C, C++, Python, R, Javascript, Ruby
+                Programming Languages: C / C++, Javascript, Python, R, Ruby
               </li>
-              <li>Tools: Amazon Web Services, Github, Jupyter, VSCode</li>
+              <li>Tools: Git, VSCode, Amazon Web Services, Jupyter</li>
             </ul>
           </div>
           <div css={card}>

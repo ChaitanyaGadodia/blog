@@ -20,7 +20,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module"
   },
-  plugins: ["react", "@typescript-eslint", "prettier"],
+  plugins: ["react", "@typescript-eslint", "prettier", "emotion"],
   rules: {
     "prettier/prettier": "error"
   }

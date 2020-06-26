@@ -28,6 +28,7 @@ const textWrap = css({
 
 const profileStyle = css({
   borderRadius: "4px",
+  width: "100%", // this had to be added for firefox
 });
 
 const subHeading = css({
