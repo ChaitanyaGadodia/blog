@@ -28,7 +28,7 @@ const textWrap = css({
 
 const profileStyle = css({
   borderRadius: "4px",
-  // width: "100%", // this had to be added for firefox
+  minWidth: "270px", // Image shrinks in firefox: https://github.com/philipwalton/flexbugs/issues/138 -> watch this
 });
 
 const subHeading = css({
