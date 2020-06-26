@@ -2,6 +2,10 @@ import * as React from "react";
 import App from "next/app";
 import { Global, css } from "@emotion/core";
 import Footer from "../components/Footer";
+import { CacheProvider } from "@emotion/core";
+
+// Use only { cache } from 'emotion'. Don't use { css }.
+import { cache } from "emotion";
 
 const globalStyles = (
   <Global
@@ -30,11 +34,11 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <>
+      <CacheProvider value={cache}>
         {globalStyles}
         <Component {...pageProps} />
         <Footer />
-      </>
+      </CacheProvider>
     );
   }
 }
