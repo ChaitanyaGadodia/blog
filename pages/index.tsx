@@ -1,8 +1,9 @@
 import * as React from "react";
 import Head from "next/Head";
-import Header from "../components/Header";
-import { pageWrap, pageHeading } from "../styles/global";
 import { css } from "@emotion/core";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { pageWrap, pageHeading } from "../styles/global";
 
 // const breakpoints = [576, 768, 992, 1200]
 
@@ -112,6 +113,7 @@ export default class Index extends React.PureComponent {
             />
           </div>
         </div>
+        <Footer />
       </>
     );
   }

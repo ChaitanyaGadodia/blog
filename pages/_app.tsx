@@ -1,7 +1,6 @@
 import * as React from "react";
 import App from "next/app";
 import { Global, css } from "@emotion/core";
-import Footer from "../components/Footer";
 import { CacheProvider } from "@emotion/core";
 
 // Use only { cache } from 'emotion'. Don't use { css }.
@@ -37,7 +36,6 @@ export default class MyApp extends App {
       <CacheProvider value={cache}>
         {globalStyles}
         <Component {...pageProps} />
-        <Footer />
       </CacheProvider>
     );
   }
