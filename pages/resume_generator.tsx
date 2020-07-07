@@ -6,7 +6,7 @@ import { pageWrap } from "../styles/global";
 export default class ResumeGen extends React.PureComponent {
   render() {
     return (
-      <div css={[pageWrap, css({ paddingTop: 0 })]}>
+      <div css={[pageWrap, css({ paddingTop: 20 })]}>
         <ResumeContent />
       </div>
     );

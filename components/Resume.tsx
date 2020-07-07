@@ -52,6 +52,7 @@ const headStyle = css({
 
 const contentStyle = css({
   fontWeight: 200,
+  textAlign: "justify",
 });
 
 const labelStyle = css({
@@ -108,7 +109,17 @@ export default class Resume extends React.PureComponent {
                   <div css={badge}>Jun 2018-cur.</div>
                 </td>
                 <td>
-                  <div css={headStyle}>Software Engineer, Anarock</div>
+                  <div css={headStyle}>
+                    Software Engineer,{" "}
+                    <a
+                      href="https://anarock.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Anarock
+                    </a>
+                  </div>
+
                   <ul css={contentStyle}>
                     <li>
                       Building the next-gen high throughput and intelligent Saas
@@ -141,7 +152,17 @@ export default class Resume extends React.PureComponent {
                   <div css={badge}>Jul-Dec 2017</div>
                 </td>
                 <td>
-                  <div css={headStyle}>Data Science Intern, HERE Maps</div>
+                  <div css={headStyle}>
+                    Data Science Intern,
+                    <a
+                      href="https://here.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      HERE Maps
+                    </a>
+                  </div>
+
                   <ul css={contentStyle}>
                     <li>
                       Developed a Machine Learning and Data Mining solution to
@@ -163,8 +184,14 @@ export default class Resume extends React.PureComponent {
                 </td>
                 <td>
                   <div css={headStyle}>
-                    Summer Research Intern, Center for Development of Imaging
-                    Technology
+                    Summer Research Intern,{" "}
+                    <a
+                      href="https://www.cdit.org/home-1"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Center for Development of Imaging Technology
+                    </a>
                   </div>
                   <ul css={contentStyle}>
                     <li>
@@ -210,7 +237,7 @@ export default class Resume extends React.PureComponent {
                   <ul css={contentStyle}>
                     <li>
                       Implemented machine learning models for predicting the
-                      monthly All NIght Canteen Bill based on various parameters
+                      monthly All Night Canteen Bill based on various parameters
                       related to a student&apos;s lifestyle in BITS.
                     </li>
                   </ul>
