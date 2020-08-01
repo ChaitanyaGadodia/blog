@@ -153,7 +153,7 @@ export default class Resume extends React.PureComponent {
                 </td>
                 <td>
                   <div css={headStyle}>
-                    Data Science Intern,
+                    Data Science Intern,{" "}
                     <a
                       href="https://here.com"
                       rel="noopener noreferrer"

@@ -1,7 +1,7 @@
 {
   "name": "chaitanyagadodia.github.io",
   "version": "1.0.0",
-  "description": "React, Next.js, Typescript, Eslint,Prettier, Emotion Portfolio Website",
+  "description": "React, Next.js, Typescript, Emotion Portfolio Website",
   "main": "index.js",
   "scripts": {
     "dev": "next",
