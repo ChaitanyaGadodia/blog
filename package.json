@@ -10,7 +10,7 @@
     "export": "next export",
     "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
     "lint": "eslint --fix './{components,pages,styles}/**/*.{ts,tsx}'",
-    "pdf": "node ./utils/pdf.js && git add public/resume/*"
+    "pdf:resume": "node ./utils/pdf.js && git add public/resume/*"
   },
   "keywords": [],
   "author": "Chaitanya Gadodia <chaitanya.gadodia01@gmail.com>",
