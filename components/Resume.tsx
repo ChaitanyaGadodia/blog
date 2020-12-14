@@ -131,10 +131,6 @@ export default class Resume extends React.PureComponent {
                       standards and improving team productivity by reducing fear
                       through processes & tests.
                     </li>
-                    <li>
-                      Tech: Javascript, Typescript, Reactjs, Redux, Next.js,
-                      GraphQL, Svelte
-                    </li>
                   </ul>
                 </td>
               </tr>
