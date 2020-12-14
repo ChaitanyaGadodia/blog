@@ -16,7 +16,7 @@ export default class MyDocument extends Document {
             dangerouslySetInnerHTML={{ __html: styles.css }}
           />
         </>
-      ),
+      )
     };
   }
 

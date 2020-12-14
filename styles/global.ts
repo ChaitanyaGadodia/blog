@@ -6,10 +6,10 @@ export const pageWrap = css({
   backgroundColor: "#fdfdfd",
   margin: "0px auto",
   maxWidth: "800px",
-  width: "100%",
+  width: "100%"
 });
 
 export const pageHeading = css({
   fontWeight: 300,
-  fontSize: "2.5rem",
+  fontSize: "2.5rem"
 });

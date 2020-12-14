@@ -23,5 +23,10 @@ module.exports = {
   plugins: ["react", "@typescript-eslint", "prettier", "emotion"],
   rules: {
     "prettier/prettier": "error"
+  },
+  settings: {
+    react: {
+      version: "latest"
+    }
   }
 };

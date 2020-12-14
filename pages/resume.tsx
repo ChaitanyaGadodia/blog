@@ -19,7 +19,7 @@ export default class Resume extends React.PureComponent {
             css={css({
               display: "flex",
               justifyContent: "space-between",
-              alignItems: "center",
+              alignItems: "center"
             })}
           >
             <div css={pageHeading}>Resume</div>

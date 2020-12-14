@@ -11,11 +11,11 @@ const tabStyle = css({
   color: "#5f6c80",
   marginRight: "20px",
   fontSize: "18px",
-  cursor: "pointer",
+  cursor: "pointer"
 });
 
 const selectedPage = css({
-  fontWeight: 700,
+  fontWeight: 700
 });
 
 const Tab = (props: { href: string; title: string; page: string }) => {

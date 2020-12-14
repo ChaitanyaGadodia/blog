@@ -19,7 +19,7 @@ export default class Index extends React.PureComponent {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              fontSize: "18px",
+              fontSize: "18px"
             })}
           >
             Coming Soon &#128579;

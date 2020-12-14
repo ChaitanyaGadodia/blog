@@ -20,7 +20,7 @@ const card = css`
 const cardHeading = css({
   fontSize: "1.75rem",
   fontWeight: 300,
-  marginBottom: "0.75rem",
+  marginBottom: "0.75rem"
 });
 
 const badge = css`
@@ -47,20 +47,20 @@ const badge = css`
 
 const headStyle = css({
   fontSize: 16,
-  fontWeight: 500,
+  fontWeight: 500
 });
 
 const contentStyle = css({
   fontWeight: 200,
-  textAlign: "justify",
+  textAlign: "justify"
 });
 
 const labelStyle = css({
-  textAlign: "end",
+  textAlign: "end"
 });
 
 const nameText = css({
-  paddingLeft: "20px",
+  paddingLeft: "20px"
 });
 
 export default class Resume extends React.PureComponent {
@@ -106,13 +106,48 @@ export default class Resume extends React.PureComponent {
             <tbody>
               <tr>
                 <td>
-                  <div css={badge}>Jun 2018-cur.</div>
+                  <div css={badge}>Apr 20-cur.</div>
+                </td>
+                <td>
+                  <div css={headStyle}>
+                    Senior Software Engineer,{" "}
+                    <a
+                      href="http://tech.anarock.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Anarock
+                    </a>
+                  </div>
+
+                  <ul css={contentStyle}>
+                    <li>In addition to my roles as software developer</li>
+                    <li>
+                      Own the build & deployment Pipeline for the Web App along
+                      with tracking speed & monitoring errors.
+                    </li>
+                    <li>
+                      Focus on ensuring code reliability, setting quality
+                      standards and improving team productivity by reducing fear
+                      through processes & tests.
+                    </li>
+                    <li>
+                      Tech: Javascript, Typescript, Reactjs, Redux, Next.js,
+                      GraphQL, Svelte
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div css={badge}>Jun 18-Mar 20</div>
                 </td>
                 <td>
                   <div css={headStyle}>
                     Software Engineer,{" "}
                     <a
-                      href="https://anarock.com"
+                      href="http://tech.anarock.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -149,7 +184,7 @@ export default class Resume extends React.PureComponent {
               </tr>
               <tr>
                 <td>
-                  <div css={badge}>Jul-Dec 2017</div>
+                  <div css={badge}>Jul-Dec 17</div>
                 </td>
                 <td>
                   <div css={headStyle}>
