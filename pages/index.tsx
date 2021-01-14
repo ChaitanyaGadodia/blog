@@ -1,6 +1,6 @@
 import * as React from "react";
 import Head from "next/Head";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { pageWrap, pageHeading } from "../styles/global";
@@ -98,14 +98,14 @@ export default class Index extends React.PureComponent {
                 </span>
                 .
               </div>
-              {/* <div css={statement}>
-                I have always found idiols in people like Rahul Dravid and Steve
-                Jobs, who are know for the intensity these guys had, and I
+              <div css={statement}>
+                I have always found idols in people like Rahul Dravid and Steve
+                Jobs, who are known for the intensity these guys had, and I
                 intend to bring the same intensity to the table.
-              </div> */}
+              </div>
               <div css={statement}>
                 I am always on the lookout for opportunities that will help me
-                learn new things, so let us collaborate!
+                learn new things, so let&apos;s collaborate!
               </div>
             </div>
             <img

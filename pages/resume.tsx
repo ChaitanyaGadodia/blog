@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import ResumeContent from "../components/Resume";
 import Footer from "../components/Footer";
 import { pageWrap, pageHeading } from "../styles/global";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
 export default class Resume extends React.PureComponent {
   render() {

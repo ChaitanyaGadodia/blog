@@ -1,5 +1,5 @@
 import * as React from "react";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
 const card = css`
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -21,6 +21,10 @@ const cardHeading = css({
   fontSize: "1.75rem",
   fontWeight: 300,
   marginBottom: "0.75rem"
+});
+
+const cardHeadingBottom = css({
+  marginBottom: "0px"
 });
 
 const badge = css`
@@ -123,7 +127,7 @@ export default class Resume extends React.PureComponent {
                   <ul css={contentStyle}>
                     <li>In addition to my roles as software developer</li>
                     <li>
-                      Own the build & deployment Pipeline for the Web App along
+                      Own the build & deployment Pipeline for the Web Apps along
                       with tracking speed & monitoring errors.
                     </li>
                     <li>
@@ -240,7 +244,7 @@ export default class Resume extends React.PureComponent {
             </tbody>
           </table>
         </div>
-        <div css={card}>
+        {/* <div css={card}>
           <div css={cardHeading}>Projects</div>
           <table>
             <tbody>
@@ -276,20 +280,22 @@ export default class Resume extends React.PureComponent {
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> */}
         <div css={card}>
-          <div css={cardHeading}>Skills</div>
+          <div css={[cardHeading, cardHeadingBottom]}>Skills</div>
           <ul css={contentStyle}>
             <li>
-              Courses: Object Oriented Programming, Operating Systems, Machine
-              Learning, Pattern Recognition
+              Courses: OOP, Operating Systems, Machine Learning, Pattern
+              Recognition
             </li>
             <li>Programming Languages: C / C++, Javascript, Python, R, Ruby</li>
             <li>Tools: Git, VSCode, Amazon Web Services, Jupyter</li>
           </ul>
         </div>
         <div css={card}>
-          <div css={cardHeading}>Awards and Recognitions</div>
+          <div css={[cardHeading, cardHeadingBottom]}>
+            Awards and Recognitions
+          </div>
           <ul css={contentStyle}>
             <li>
               Ranked <strong>1st out of 11</strong> teams in the AI-based -
@@ -305,7 +311,7 @@ export default class Resume extends React.PureComponent {
         </div>
         <div css={card}>
           {" "}
-          <div css={cardHeading}>Other Interests</div>
+          <div css={[cardHeading, cardHeadingBottom]}>Other Interests</div>
           <ul css={contentStyle}>
             <li>reading, music</li>
             <li>meditation, yoga, swimming, cycling</li>

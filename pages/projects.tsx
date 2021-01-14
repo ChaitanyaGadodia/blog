@@ -2,7 +2,7 @@ import * as React from "react";
 import Head from "next/Head";
 import Header from "../components/Header";
 import { pageWrap, pageHeading } from "../styles/global";
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
 export default class Projects extends React.PureComponent {
   render() {

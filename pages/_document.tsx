@@ -1,25 +1,7 @@
 import * as React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { extractCritical } from "emotion-server";
 
 export default class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    const styles = extractCritical(initialProps.html);
-    return {
-      ...initialProps,
-      styles: (
-        <>
-          {initialProps.styles}
-          <style
-            data-emotion-css={styles.ids.join(" ")}
-            dangerouslySetInnerHTML={{ __html: styles.css }}
-          />
-        </>
-      )
-    };
-  }
-
   render() {
     return (
       <Html lang="en-us">
@@ -50,7 +32,6 @@ export default class MyDocument extends Document {
             sizes="60x60"
             href="/apple-icon-60x60.png"
           />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#3c4858" />
         </Head>
         <body>

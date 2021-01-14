@@ -1,4 +1,4 @@
-import { css } from "@emotion/core";
+import { css } from "@emotion/react";
 
 export const pageWrap = css({
   padding: "56px 15px 30px",

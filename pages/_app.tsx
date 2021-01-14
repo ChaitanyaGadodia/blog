@@ -1,9 +1,9 @@
+/// <reference types="@emotion/react/types/css-prop" />
+
 import * as React from "react";
 import App from "next/app";
-import { Global, css, CacheProvider } from "@emotion/core";
-
-// Use only { cache } from 'emotion'. Don't use { css }.
-import { cache } from "emotion";
+import { css, Global } from "@emotion/react";
+import Head from "next/Head";
 
 const globalStyles = (
   <Global
@@ -32,10 +32,13 @@ export default class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
     return (
-      <CacheProvider value={cache}>
+      <>
+        <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+        </Head>
         {globalStyles}
         <Component {...pageProps} />
-      </CacheProvider>
+      </>
     );
   }
 }
