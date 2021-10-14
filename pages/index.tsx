@@ -45,68 +45,23 @@ export default class Index extends React.PureComponent {
         </Head>
         <Header page="Home" />
         <div css={pageWrap}>
-          <div css={pageHeading}>Chaitanya Gadodia</div>
-          <div css={[statement, subHeading]}>engineer. hacker. optimist</div>
           <div css={contentWrap}>
-            <div css={textWrap}>
-              <div css={statement}>
-                I &#128150;to <strong>code</strong> and am extremely passionate
-                about <strong>building</strong> high throughput, intelligent
-                solutions to problems that can scale to millions of users using
-                products that are <strong>data-driven</strong> and have a{" "}
-                <strong>great design</strong>.
-              </div>
-              <div css={statement}>
-                Currently, I code for a bootstrapped startup{" "}
-                <a
-                  href="https://tech.anarock.com/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Anarock
-                </a>
-                , based out of Mumbai, India.
-              </div>
-              <div css={statement}>
-                Prior to which I graduated with a B.E.(Hons.) in Electrical and
-                Electronics from{" "}
-                <a
-                  href="http://www.bits-pilani.ac.in/pilani/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Birla Institute of Technology and Science Pilani
-                </a>{" "}
-                in 2018
-                <span>
-                  , and had enriching internship experiences at{" "}
-                  <a
-                    href="https://www.here.com/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    Here Maps
-                  </a>{" "}
-                  and{" "}
-                  <a
-                    href="https://www.cdit.org/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    C-DIT
-                  </a>
-                </span>
-                .
-              </div>
-              <div css={statement}>
-                I have always found idols in people like Rahul Dravid and Steve
-                Jobs, who are known for the intensity these guys had, and I
-                intend to bring the same intensity to the table.
-              </div>
-              <div css={statement}>
-                I am always on the lookout for opportunities that will help me
-                learn new things, so let&apos;s collaborate!
-              </div>
+            <div>
+              <h1
+                css={css`
+                  font-size: 32px;
+                  font-weight: 300;
+                  line-height: 1.2;
+                `}
+              >
+                Hi!👋 I&apos;m Chaitanya
+              </h1>
+              <p>
+                I am a software developer living in Mumbai, India. I also host
+                and produce the podcast This Developer&apos;s Life with my
+                friend Scott Hanselman and work at Microsoft as a Cloud
+                Developer Advocate.
+              </p>
             </div>
             <img
               alt="Profile Pic"

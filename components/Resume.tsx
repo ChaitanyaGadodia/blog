@@ -125,10 +125,10 @@ export default class Resume extends React.PureComponent {
                   </div>
 
                   <ul css={contentStyle}>
-                    <li>In addition to my roles as software developer</li>
                     <li>
-                      Own the build & deployment Pipeline for the Web Apps along
-                      with tracking speed & monitoring errors.
+                      In addition to my roles as software developer: own the
+                      build & deployment Pipeline for the Web Apps along with
+                      tracking speed & monitoring errors.
                     </li>
                     <li>
                       Focus on ensuring code reliability, setting quality

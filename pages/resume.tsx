@@ -2,7 +2,6 @@ import * as React from "react";
 import Head from "next/Head";
 import Header from "../components/Header";
 import ResumeContent from "../components/Resume";
-import Footer from "../components/Footer";
 import { pageWrap, pageHeading } from "../styles/global";
 import { css } from "@emotion/react";
 
@@ -29,7 +28,6 @@ export default class Resume extends React.PureComponent {
           </div>
           <ResumeContent />
         </div>
-        <Footer />
       </>
     );
   }
