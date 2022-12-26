@@ -57,7 +57,8 @@ export default class Index extends React.PureComponent {
                 Hi!👋 I&apos;m Chaitanya
               </h1>
               <p>
-                I am a software developer living in Bangalore, India and work at ZebPay as Lead Software Developer.
+                I am a software developer living in Bangalore, India and work at
+                ZebPay as Lead Software Developer.
               </p>
             </div>
             <img
