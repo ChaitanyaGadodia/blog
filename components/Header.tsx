@@ -30,9 +30,9 @@ export default class Header extends React.PureComponent<Props> {
             <Image src="/code.png" width="30" height="30" />
           </a>
         </Link>
-        <div>
+        {/* <div>
           <input type="checkbox" id="checkbox" />
-        </div>
+        </div> */}
       </header>
     );
   }
