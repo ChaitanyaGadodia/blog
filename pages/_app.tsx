@@ -3,7 +3,7 @@
 import * as React from "react";
 import App from "next/app";
 import { css, Global } from "@emotion/react";
-import Head from "next/Head";
+import Head from "next/head";
 
 const globalStyles = (
   <Global

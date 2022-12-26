@@ -13,7 +13,11 @@ const headerWrap = css({
   alignItems: "center"
 });
 
-export default class Header extends React.PureComponent {
+interface Props {
+  page: string;
+}
+
+export default class Header extends React.PureComponent<Props> {
   state = {
     theme: "white"
   };
@@ -27,12 +31,7 @@ export default class Header extends React.PureComponent {
           </a>
         </Link>
         <div>
-          <input type="checkbox" id="checkbox">
-            <label htmlFor="checkbox">
-              <li></li>
-              <li></li>
-            </label>
-          </input>
+          <input type="checkbox" id="checkbox" />
         </div>
       </header>
     );

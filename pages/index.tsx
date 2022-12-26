@@ -1,19 +1,19 @@
 import * as React from "react";
-import Head from "next/Head";
+import Head from "next/head";
 import { css } from "@emotion/react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { pageWrap, pageHeading } from "../styles/global";
+import { pageWrap } from "../styles/global";
 
 // const breakpoints = [576, 768, 992, 1200]
 
-const statement = css`
-  margin: 0px 40px 15px 0px;
-  text-align: justify;
-  @media (max-width: 576px) {
-    margin-right: 0px;
-  }
-`;
+// const statement = css`
+//   margin: 0px 40px 15px 0px;
+//   text-align: justify;
+//   @media (max-width: 576px) {
+//     margin-right: 0px;
+//   }
+// `;
 
 const contentWrap = css`
   display: flex;
@@ -23,18 +23,18 @@ const contentWrap = css`
   }
 `;
 
-const textWrap = css({
-  marginTop: "5px"
-});
+// const textWrap = css({
+//   marginTop: "5px"
+// });
 
 const profileStyle = css({
   borderRadius: "4px",
   minWidth: "270px" // Image shrinks in firefox: https://github.com/philipwalton/flexbugs/issues/138 -> watch this
 });
 
-const subHeading = css({
-  margin: "10px 0px 40px"
-});
+// const subHeading = css({
+//   margin: "10px 0px 40px"
+// });
 
 export default class Index extends React.PureComponent {
   render() {

@@ -1,5 +1,5 @@
 import * as React from "react";
-import Head from "next/Head";
+import Head from "next/head";
 import Header from "../components/Header";
 import { pageWrap, pageHeading } from "../styles/global";
 import { css } from "@emotion/react";
