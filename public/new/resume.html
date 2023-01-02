@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <meta charSet="utf-8" />
+  <title>Resume | Chaitanya Gadodia</title>
+  <meta name="description" content="Software Engineer, Open Source Contributor, Front end Engineer" />
+  <meta name="theme-color" content="rgb(211 238 225)" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&amp;family=Raleway:wght@300;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <style>
+    body,
+    html {
+      padding: 0;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, Montserrat
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased
+    }
+
+    .Resume_header__3LGkL {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 15px 30px;
+      -webkit-box-shadow: 1px 1px 1px 0 rgb(0 0 0/15%);
+      box-shadow: 1px 1px 1px 0 rgb(0 0 0/15%);
+      position: fixed;
+      width: 100%;
+      background-color: #fff;
+      z-index: 10
+    }
+
+    .Resume_resumeWrap__2k6xR {
+      width: 900px;
+      /* height: 1310px; */
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .Resume_name__3d6ZV {
+      font-family: Raleway, sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 40px;
+      text-align: center;
+      letter-spacing: 24px;
+      position: relative;
+      z-index: 2;
+      text-shadow: 4px 4px 4px #aaa
+    }
+
+    .Resume_nameBg__15K4o {
+      background-color: rgb(211 238 225);
+      width: 100%;
+      height: 28px;
+      position: absolute;
+      bottom: 0
+    }
+
+    .Resume_phone__3Aj_g {
+      text-align: center;
+      font-family: Lato, sans-serif;
+      margin-top: 25px;
+      font-size: 18px;
+      letter-spacing: 1px
+    }
+
+    .Resume_resumeBody__fKhEZ {
+      display: flex;
+      margin-top: 30px
+    }
+
+    .Resume_contentText__33O7n {
+      color: rgb(16 23 33/70%);
+      margin-top: 15px;
+      font-family: Lato, sans-serif;
+      line-height: 22px;
+      font-size: 16px
+    }
+
+    .Resume_headerText__QRswA {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-family: Raleway, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      color: rgb(16 23 33/70%);
+      margin-top: 25px
+    }
+
+    .Resume_resumeLeft__3s8YV {
+      flex: 7 1;
+      padding-right: 20px
+    }
+
+    .Resume_osContent__1dndg {
+      display: flex
+    }
+
+    .Resume_osContent__1dndg:not(:first-child) {
+      margin-top: 15px
+    }
+
+    .Resume_osSection__1CM5E {
+      margin-top: 25px
+    }
+
+    .Resume_collegeDetails__3wyUa {
+      display: flex;
+      align-items: row;
+      justify-content: space-between
+    }
+
+    .Resume_resumeRight__1qUd2 {
+      flex: 3 1;
+      padding-left: 20px
+    }
+
+    .Resume_contactLinks__1-ydE {
+      display: flex;
+      align-items: center;
+      font-family: Lato, sans-serif;
+      margin-top: 20px
+    }
+
+    .Resume_firstContactLink__lHSiy {
+      margin-top: 25px
+    }
+
+    .Resume_contactUrls__2ezDI {
+      margin-left: 10px;
+      color: rgb(16 23 33/70%)
+    }
+
+    .Resume_skills__2d5OY {
+      color: rgb(16 23 33/70%);
+      margin-top: 15px;
+      font-family: Lato, sans-serif;
+      line-height: 28px;
+      font-size: 16px
+    }
+    .Resume_education_heading__2d5OY {
+      color: black;
+      margin-top: 15px;
+      font-family: Lato, sans-serif;
+      line-height: 28px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .Resume_education__2d5OY {
+      color: rgb(16 23 33/70%);
+      margin-top: 4px;
+      font-family: Lato, sans-serif;
+      font-size: 14px
+    }
+
+    .Resume_sectionHeaderWrap__1Ir3X {
+      display: flex;
+      align-items: center
+    }
+
+    .Resume_sectionHeader__1V7ku {
+      font-family: Raleway, sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      margin-right: 10px;
+      color: #101721;
+      letter-spacing: 1px
+    }
+
+    .Resume_sectionLine__22wUM {
+      flex-grow: 1;
+      background-color: #e0e0e0;
+      height: 1px
+    }
+
+    .Resume_flex3__1hElv {
+      flex: 3 1;
+    }
+
+    .Resume_flex3__1hElv a {
+      border-bottom: 1px dashed;
+    }
+
+    .Resume_flex7__2Jtez {
+      flex: 7 1
+    }
+
+    .Resume_relativePos__1WGht {
+      position: relative;
+      margin-top: 10px;
+    }
+
+    .Resume_emptyDiv__2mOej {
+      height: 56px
+    }
+
+    .Resume_marginT10__2TJn4 {
+      margin-top: 10px
+    }
+
+    .Resume_marginT30__1lO70 {
+      margin-top: 30px
+    }
+
+    .Resume_headerIcons__3RM55 {
+      -webkit-filter: drop-shadow(0 4px 4px #585858);
+      filter: drop-shadow(0 4px 4px #585858)
+    }
+
+    @media print {
+
+      .Resume_emptyDiv__2mOej,
+      .Resume_header__3LGkL {
+        display: none
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="Resume_resumeWrap__2k6xR">
+    <div class="Resume_relativePos__1WGht">
+      <div class="Resume_name__3d6ZV">Chaitanya Gadodia</div>
+      <div class="Resume_nameBg__15K4o"></div>
+    </div>
+    <div class="Resume_phone__3Aj_g">
+      <a href="tel:+917732866602">+91 - 7732866602</a> • <a href="mailto:chaitanya.gadodia01@gmail.com">chaitanya.gadodia01@gmail.com</a>
+    </div>
+    <div class="Resume_resumeBody__fKhEZ">
+      <div class="Resume_resumeLeft__3s8YV">
+        <div class="Resume_sectionHeaderWrap__1Ir3X">
+          <div class="Resume_sectionHeader__1V7ku">Work Experience</div>
+          <div class="Resume_sectionLine__22wUM"></div>
+        </div>
+        <div class="Resume_headerText__QRswA">
+          <a target="_blank" href="https://tech.anarock.com/">
+            <div>ZebPay | Lead Software Engineer</div>
+          </a>
+          <div>Oct, 2021 - Present</div>
+        </div>
+        <div class="Resume_contentText__33O7n">
+          <div class="Resume_marginT10__2TJn4">
+            • Mentored a team of five front-end developers in building the <a target="_blank" href="https://zebpay.com/exchange/BTC-INR" style="border-bottom: 1px dashed;">Exchange web app</a> responsible for $100M+/day transaction volume & <a target="_blank" href="https://zebpay.github.io/znew.design.system/" style="border-bottom: 1px dashed;">design system</a> from scratch.
+          </div>
+          <div class="Resume_marginT10__2TJn4">
+            • Focused on ensuring code reliability, setting quality standards and improving team productivity by reducing fear through processes & tests.
+          </div>
+        </div>
+        <div class="Resume_headerText__QRswA">
+          <a target="_blank" href="https://tech.anarock.com/">
+            <div>Anarock | Senior Software Engineer</div>
+          </a>
+          <div>April, 2020 - Oct, 2021</div>
+        </div>
+        <div class="Resume_contentText__33O7n">
+          <div class="Resume_marginT10__2TJn4">
+            • Leading all the web efforts at anarock. In addition to my roles as a dev, I owned the build & deployment pipeline for all the Web Apps & JS SDK along with tracking speed & monitoring errors.
+          </div>
+          <div class="Resume_marginT10__2TJn4">
+            • Built completely customisable web - custom forms, custom widgets, reports. Which can be tailored depending on the user's prferences & access roles.
+          </div>
+          <div class="Resume_marginT10__2TJn4">
+            • Did multiple POCs & experiments, which resulted in new products & introduced new tech stacks in the team.
+          </div>
+        </div>
+        <div class="Resume_headerText__QRswA">
+          <a target="_blank" href="https://tech.anarock.com/">
+            <div>Anarock | Software Engineer</div>
+          </a>
+          <div>July, 2018 - Mar, 2020</div>
+        </div>
+        <div class="Resume_contentText__33O7n">
+          <div class="Resume_marginT10__2TJn4">
+            • Built multiple Web Apps, PWA, SPA from scratch with focus on performance, code reliability and reusability.
+          </div>
+          <div class="Resume_marginT10__2TJn4">
+            • Worked on improving performance of existing apps and reduced TTI by minimizing main-thread work through import on interaction pattern, code splitting and cut down on unnecessary re-renders.
+          </div>
+          <!-- <div class="Resume_marginT10__2TJn4">
+            • Technologies - React, Next.js, Typescript, Svelte, Sapper, GraphQL
+          </div> -->
+        </div>
+        <div class="Resume_marginT30__1lO70">
+          <div class="Resume_sectionHeaderWrap__1Ir3X">
+            <div class="Resume_sectionHeader__1V7ku">Open Source Contribution</div>
+            <div class="Resume_sectionLine__22wUM"></div>
+          </div>
+          <div class="Resume_osSection__1CM5E Resume_contentText__33O7n">
+            <div class="Resume_osContent__1dndg">
+              <div class="Resume_flex3__1hElv"><a target="_blank" href="https://pebble-web.netlify.app/">Pebble</a>
+              </div>
+              <div class="Resume_flex7__2Jtez">A set of lightweight and accessible React components.</div>
+            </div>
+            <div class="Resume_osContent__1dndg">
+              <div class="Resume_flex3__1hElv"><a target="_blank" href="https://sveltesociety.dev/">Svelte Society</a></div>
+              <div class="Resume_flex7__2Jtez">Global svelte community website</div>
+            </div>
+            <div class="Resume_osContent__1dndg">
+              <div class="Resume_flex3__1hElv"><a target="_blank" href="https://transform.tools/">Transform</a></div>
+              <div class="Resume_flex7__2Jtez">A polyglot web converter</div>
+            </div>
+          </div>
+        </div>
+        <div class="Resume_marginT30__1lO70">
+          <div class="Resume_sectionHeaderWrap__1Ir3X">
+            <div class="Resume_sectionHeader__1V7ku">Internships</div>
+            <div class="Resume_sectionLine__22wUM"></div>
+          </div>
+          <div class="Resume_headerText__QRswA"><a target="_blank" href="https://here.com">
+              <div>Here Maps | Data Science Intern</div>
+            </a>
+            <div>Jul - Dec, 2017</div>
+          </div>
+          <div class="Resume_contentText__33O7n">Developed a Machine Learning & Data Mining solution to automate the
+            manual process of image review for Map Creation and Places Teams. Scaled the solution using Pyspark and
+            deployed it on a large graph dataset (Neo4j) and AWS.</div>
+          <div class="Resume_headerText__QRswA"><a target="_blank" href="https://www.cdit.org/">
+              <div>Center for Development of Imaging Technology</div>
+            </a>
+            <div>Jun - Jul, 2016</div>
+          </div>
+          <div class="Resume_contentText__33O7n">Worked with the Optical Image Processing and Security Products Team to
+          implement a model for Vehicle Detection during night time from CCTV footage for Forensic Analysis.</div>
+        </div>
+      </div>
+      <div class="Resume_resumeRight__1qUd2">
+        <div class="Resume_sectionHeaderWrap__1Ir3X">
+          <div class="Resume_sectionHeader__1V7ku">Contact</div>
+          <div class="Resume_sectionLine__22wUM"></div>
+        </div>
+        <a target="_blank" href="https://github.com/chaitanyagadodia">
+          <div class="Resume_contactLinks__1-ydE"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="rgb(16 23 33 / 70%)" viewBox="0 0 24 24">
+              <title>GitHub</title>
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+              </path>
+            </svg>
+            <div class="Resume_contactUrls__2ezDI">github.com/chaitanyagadodia</div>
+          </div>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/chaitanya-gadodia//">
+          <div class="Resume_contactLinks__1-ydE"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="rgb(16 23 33 / 70%)" viewBox="0 0 24 24">
+              <title>LinkedIn</title>
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+              </path>
+            </svg>
+            <div class="Resume_contactUrls__2ezDI">linkedin.com/in/chaitanya-gadodia</div>
+          </div>
+        </a>
+        <a target="_blank" href="https://twitter.com/chaitanya_73">
+          <div class="Resume_contactLinks__1-ydE"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="rgb(16 23 33 / 70%)" viewBox="0 0 24 24">
+              <title>Twitter</title>
+              <path
+                d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z">
+              </path>
+            </svg>
+            <div class="Resume_contactUrls__2ezDI">twitter.com/chaitanya_73</div>
+          </div>
+        </a>
+        <div class="Resume_marginT30__1lO70">
+          <div class="Resume_sectionHeaderWrap__1Ir3X">
+            <div class="Resume_sectionHeader__1V7ku">Skills</div>
+            <div class="Resume_sectionLine__22wUM"></div>
+          </div>
+          <div class="Resume_skills__2d5OY">
+            JavaScript, TypeScript, HTML, CSS, Reactjs, Next.js, Svelte, Nodejs, GraphQL
+          </div>
+          <div class="Resume_marginT30__1lO70">
+            <div class="Resume_sectionHeaderWrap__1Ir3X">
+              <div class="Resume_sectionHeader__1V7ku">Education</div>
+              <div class="Resume_sectionLine__22wUM"></div>
+            </div>
+            <div class="Resume_education_heading__2d5OY">Birla Institute of Technology &amp; Science, Pilani</div>
+            <div class="Resume_education__2d5OY">B.E.(Hons.) Electrical and Electronics</div>
+            <div class="Resume_education__2d5OY">2014 - 2018 | Pilani, Rajasthan</div>
+          </div>
+          <div class="Resume_marginT30__1lO70">
+            <div class="Resume_sectionHeaderWrap__1Ir3X">
+              <div class="Resume_sectionHeader__1V7ku">Awards</div>
+              <div class="Resume_sectionLine__22wUM"></div>
+            </div>
+            <div class="Resume_contentText__33O7n">
+              • Lead team of 5 to win 1st place in <a  target="_blank" href="https://twitter.com/AnarockTech/status/1334085482343350272?s=20" style="border-bottom: 1px dashed;">Virtual Hackathon</a>, created a React Native app for home buyers to view house construction updates, manage payments, loan & get offers just like CRED within 48 hours.</a>
+            </div>
+            <div class="Resume_contentText__33O7n">
+              • Ranked 1st out of 11 teams in plAI, APOGEE'16 - AI based virtual bot coding competition.
+            </div>
+            <div class="Resume_contentText__33O7n" style="margin-bottom: 10px;">
+              • Awarded Gold medal at APOGEE'15 for the project Temporal Clustering of Human Actions for Complex activity analysis.
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
