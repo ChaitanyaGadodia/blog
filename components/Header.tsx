@@ -1,5 +1,4 @@
 import { css } from "@emotion/react";
-import Image from "next/image";
 import Link from "next/link";
 import * as React from "react";
 
@@ -27,7 +26,7 @@ export default class Header extends React.PureComponent<Props> {
       <header css={headerWrap}>
         <Link href="/">
           <a>
-            <Image src="/code.png" width="30" height="30" />
+            <img src="/code.png" width="30" height="30" />
           </a>
         </Link>
         {/* <div>
